@@ -25,6 +25,10 @@
  o(n)
  */
 
+/*
+ Runtime: 44 ms, faster than 100.00% of Swift online submissions for Maximum Subarray.
+ Memory Usage: 4.7 MB, less than 86.76% of Swift online submissions for Maximum Subarray.
+ */
 
 class Solution {
     func maxSubArray(_ nums: [Int]) -> Int {
@@ -38,5 +42,23 @@ class Solution {
             }
         }
         return largestSum
+    }
+}
+
+/*
+ Runtime: 44 ms, faster than 100.00% of Swift online submissions for Maximum Subarray.
+ Memory Usage: 4.7 MB, less than 98.53% of Swift online submissions for Maximum Subarray.
+ */
+
+class Solution1 {
+    func maxSubArray(_ nums: [Int]) -> Int {
+        var localMax = nums[0]
+        var ultimateMax = nums[0]
+        
+        for i in 1..<nums.count {
+            localMax = max(localMax+nums[i],nums[i])
+            ultimateMax = max(ultimateMax, localMax)
+        }
+        return ultimateMax
     }
 }

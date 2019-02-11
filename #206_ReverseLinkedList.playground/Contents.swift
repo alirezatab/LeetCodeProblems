@@ -62,6 +62,11 @@ class Solution {
         return prevPtr
     }
     
+    /*
+     Runtime: 24 ms, faster than 99.15% of Swift online submissions for Reverse Linked List.
+     Memory Usage: 4.6 MB, less than 82.98% of Swift online submissions for Reverse Linked List.
+ */
+    
     // iteratively
     func reverseListIteratively(_ head: ListNode?) -> ListNode? {
         guard var previousPtr = head, previousPtr.next != nil else {
