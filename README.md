@@ -13,4 +13,9 @@
 |               #28          |  #28_Implement_strStr() |
 |               #35          |  #35_SearchInsertPosition  |
 |               #53          | Maximum Sub-Array |
+|               #54          | Spiral Matrix |
+|               #101          | Symmetric Tree |
+|               #108         | Convert Sorted Array To Binary Search Tree |
+|               #121          | Best Time To Buy And Sell Stocks |
+
 
