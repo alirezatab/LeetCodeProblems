@@ -36,3 +36,9 @@
 |               #344        |     Reverse String |
 |               #387        |     First Unique Character In String |
 |               #399        |     Nested List Weight Sum |
+|               #403        |     Frog Jump |
+|               #412        |     Fizz Buzz |
+|               #704        |     Binary Search |
+|               #706        |     design HashMap |
+|               #724        |     Find Pivot Index |
+|               #760        |     Find Anagram Mappings |
