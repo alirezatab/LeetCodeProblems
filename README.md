@@ -27,3 +27,7 @@
 |               #237        |     Delete Node In Linked List |
 |               #242        |     Valid Anagram |
 |               #244        |     Shortest Word Distance II |
+|               #251        |     Flatten 2D vector |
+|               #256        |     paint House |
+|               #283        |     Moves Zeros |
+|               #311        |     Sparse Matrix Multiplication |
