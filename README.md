@@ -22,3 +22,8 @@
 |               #155        |     Min Stack |
 |               #167        |     TwoSumII - Sorted Input Array |
 |               #200        |     Number Of Islands |
+|               #202        |     Happy Number |
+|               #206        |     Reverse Linked List |
+|               #237        |     Delete Node In Linked List |
+|               #242        |     Valid Anagram |
+|               #244        |     Shortest Word Distance II |
