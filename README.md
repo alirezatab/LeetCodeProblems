@@ -23,6 +23,7 @@
 |               #167        |     TwoSumII - Sorted Input Array |
 |               #200        |     Number Of Islands |
 |               #202        |     Happy Number |
+|               #205        |     Isomorphic Strings |
 |               #206        |     Reverse Linked List |
 |               #237        |     Delete Node In Linked List |
 |               #242        |     Valid Anagram |
