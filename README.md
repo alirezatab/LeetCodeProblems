@@ -31,3 +31,8 @@
 |               #256        |     paint House |
 |               #283        |     Moves Zeros |
 |               #311        |     Sparse Matrix Multiplication |
+|               #322        |     Implement Queue Using Stack |
+|               #329        |     Longest Increasing Path In Matrix |
+|               #344        |     Reverse String |
+|               #387        |     First Unique Character In String |
+|               #399        |     Nested List Weight Sum |
