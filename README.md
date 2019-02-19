@@ -42,3 +42,7 @@
 |               #706        |     design HashMap |
 |               #724        |     Find Pivot Index |
 |               #760        |     Find Anagram Mappings |
+|               #771        |     Jewels And Stones |
+|               #832        |     Flipping An Image |
+|               #905        |     Sort Array By Parity |
+|               #977        |     Squares Of Sorted Array |
