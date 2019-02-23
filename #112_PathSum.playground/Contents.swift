@@ -3,6 +3,10 @@
  Memory Usage: 19.4 MB, less than 26.92% of Swift online submissions for Path Sum.
  */
 
+/*
+ o(N) Time
+ o(N) space
+ */
 
 // Definition for a binary tree node.
 public class TreeNode {
