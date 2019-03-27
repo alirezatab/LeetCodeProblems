@@ -1,25 +1,27 @@
 # LeetCodeProblems + other problems shown as <= 0
 
-| Question Number  |        Question Name   |
-| --------------------- | -----------------------  |
-|              #-1          |   MergeSort.playground   |
-|               #0          |   selfMade_flattenArr    |
-|               #1          |            Two Sum       |
-|               #2          |     Add Two Numbers      |
-|               #7          |     Reverse Integar      |
-|               #9          |     Palindrome Number    | 
-|               #13         |     Roman To Integar     |  
-|               #14         |     Longest Common Prefix|
-|               #20         |     Valid Parentheses    |
-|               #21         |  Merge Two Sorted Lists  |
-|               #24         |     SwapNodesInPairs	   |
-|               #26         |RemoveDuplicatesFromSortedArray|
-|               #28         |     Implement strStr()   |
-|               #35         |  Search Insert Position  |
-|               #53         |     Maximum Sub-Array    |
-|               #54         |     Spiral Matrix        |
-|               #101        |     Symmetric Tree       |
+| 		Question Number  	|        Question Name   					  |	
+| ------------------------- | ------------------------------------------  |
+|              #-1          |   MergeSort.playground   					  |
+|               #0          |   selfMade_flattenArr    					  |
+|               #1          |            Two Sum       					  |
+|               #2          |     Add Two Numbers      					  |
+|               #7          |     Reverse Integar      					  |
+|               #9          |     Palindrome Number    					  | 
+|               #13         |     Roman To Integar     					  |  
+|               #14         |     Longest Common Prefix					  |
+|               #20         |     Valid Parentheses    					  |
+|               #21         |  Merge Two Sorted Lists  					  |
+|               #24         |     SwapNodesInPairs	   					  |
+|               #26         |RemoveDuplicatesFromSortedArray			  |
+|               #28         |     Implement strStr()   				  	  |
+|               #35         |  Search Insert Position 					  |
+|               #53         |     Maximum Sub-Array    					  |
+|               #54         |     Spiral Matrix        					  |
+|               #67         |     AddBinary			   					  |
+|               #101        |     Symmetric Tree       					  |
 |               #108        |  Convert Sorted Array To Binary Search Tree |
+|				#112 		|	  PathSum							      |
 |               #121        |  Best Time To Buy And Sell Stocks           |
 |               #141        |     Linked List Cycle                       |
 |               #146        |     LRU Cache 							  |
@@ -31,7 +33,9 @@
 |               #206        |     Reverse Linked List 				      |
 |               #237        |     Delete Node In Linked List 			  |
 |               #242        |     Valid Anagram 						  |
+|               #243        |     Shortest Word Distance  				  |
 |               #244        |     Shortest Word Distance II 			  |
+|               #245        |     Shortest Word Distance III 			  |
 |               #251        |     Flatten 2D vector 					  |
 |               #256        |     paint House 							  |
 |               #283        |     Moves Zeros 							  |
