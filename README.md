@@ -2,7 +2,7 @@
 
 | 		Question Number  	|        Question Name   					  |	
 | ------------------------- | ------------------------------------------  |
-|              #-1          |     MergeSort     					  	  |
+|              #-1          |     Merge Sort     					  	  |
 |               #0          |   selfMade_flattenArr    					  |
 |               #1          |     Two Sum       					  	  |
 |               #2          |     Add Two Numbers      					  |
@@ -13,7 +13,7 @@
 |               #20         |     Valid Parentheses    					  |
 |               #21         |  Merge Two Sorted Lists  					  |
 |               #24         |     Swap Nodes In Pairs	   				  |
-|               #26         |Remove Duplicates From Sorted Array		  |
+|               #26         |  Remove Duplicates From Sorted Array		  |
 |               #28         |     Implement strStr()   				  	  |
 |               #35         |  Search Insert Position 					  |
 |               #53         |     Maximum Sub-Array    					  |
