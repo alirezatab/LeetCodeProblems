@@ -2,9 +2,9 @@
 
 | 		Question Number  	|        Question Name   					  |	
 | ------------------------- | ------------------------------------------  |
-|              #-1          |   MergeSort.playground   					  |
+|              #-1          |     MergeSort     					  	  |
 |               #0          |   selfMade_flattenArr    					  |
-|               #1          |            Two Sum       					  |
+|               #1          |     Two Sum       					  	  |
 |               #2          |     Add Two Numbers      					  |
 |               #7          |     Reverse Integar      					  |
 |               #9          |     Palindrome Number    					  | 
@@ -12,16 +12,16 @@
 |               #14         |     Longest Common Prefix					  |
 |               #20         |     Valid Parentheses    					  |
 |               #21         |  Merge Two Sorted Lists  					  |
-|               #24         |     SwapNodesInPairs	   					  |
-|               #26         |RemoveDuplicatesFromSortedArray			  |
+|               #24         |     Swap Nodes In Pairs	   				  |
+|               #26         |Remove Duplicates From Sorted Array		  |
 |               #28         |     Implement strStr()   				  	  |
 |               #35         |  Search Insert Position 					  |
 |               #53         |     Maximum Sub-Array    					  |
 |               #54         |     Spiral Matrix        					  |
-|               #67         |     AddBinary			   					  |
+|               #67         |     Add Binary			   				  |
 |               #101        |     Symmetric Tree       					  |
 |               #108        |  Convert Sorted Array To Binary Search Tree |
-|				#112 		|	  PathSum							      |
+|				#112 		|	  Path Sum							      |
 |               #121        |  Best Time To Buy And Sell Stocks           |
 |               #141        |     Linked List Cycle                       |
 |               #146        |     LRU Cache 							  |
@@ -38,17 +38,21 @@
 |               #245        |     Shortest Word Distance III 			  |
 |               #251        |     Flatten 2D vector 					  |
 |               #256        |     paint House 							  |
+|				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
 |               #311        |     Sparse Matrix Multiplication 			  |
 |               #322        |     Implement Queue Using Stack 			  |
 |               #329        |     Longest Increasing Path In Matrix 	  |
+|               #339        |     Nested List Weight Sum 				  |
 |               #344        |     Reverse String 						  |
+|				#364		|	  Nested List Weight SumII 				  |
 |               #387        |     First Unique Character In String 		  |
-|               #399        |     Nested List Weight Sum 				  |
 |               #403        |     Frog Jump 							  |
 |               #412        |     Fizz Buzz 							  |
+|				#605		|	  Can Place Flowers						  |
 |               #704        |     Binary Search 						  |
 |               #706        |     design HashMap 						  |
+|				#716		|	  Max Stack								  |
 |               #724        |     Find Pivot Index 						  |
 |               #760        |     Find Anagram Mappings 				  |
 |               #771        |     Jewels And Stones 					  |
