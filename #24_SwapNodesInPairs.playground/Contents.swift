@@ -3,7 +3,7 @@
  space: o(1) - since all swaps happen in place. no new list was created other than needing to update the head cause no inout
  
  Runtime: 8 ms, faster than 100.00% of Swift online submissions for Swap Nodes in Pairs.
- Memory Usage: 18.9 MB, less than 26.67% of Swift online submissions for Swap Nodes in Pairs.
+ Memory Usage: 18.6 MB, less than 60.00% of Swift online submissions for Swap Nodes in Pairs.
  */
 
 /*
@@ -57,6 +57,42 @@ class Solution {
             nextNode = curNode?.next
             tempNode = nextNode?.next
         }
+        
+        return duplicateHead
+    }
+}
+
+/*
+ Runtime: 8 ms, faster than 100.00% of Swift online submissions for Swap Nodes in Pairs.
+ Memory Usage: 18.6 MB, less than 60.00% of Swift online submissions for Swap Nodes in Pairs.
+ */
+
+// recursive way - uses extra stack for memory.
+// same time as iterative way
+class Solution1 {
+    func swapPairs(_ head: ListNode?) -> ListNode? {
+        guard head != nil else {return head}
+        var duplicateHead = head
+        
+        func swapPairs(_ prevNode: ListNode?, _ curNode: ListNode?,
+                       _ nextNode: ListNode?, _ tempNode: ListNode?) {
+            guard curNode != nil && nextNode != nil else {return}
+            
+            if curNode != nil && nextNode != nil {
+                if curNode === duplicateHead {duplicateHead = nextNode}
+                
+                nextNode?.next = curNode
+                curNode?.next = tempNode
+                
+                if prevNode != nil {
+                    prevNode?.next = nextNode
+                }
+                
+                swapPairs(curNode, tempNode, tempNode?.next, tempNode?.next?.next)
+            }
+        }
+        
+        swapPairs(nil, head, head?.next, head?.next?.next)
         
         return duplicateHead
     }
