@@ -23,6 +23,7 @@
 |               #108        |  Convert Sorted Array To Binary Search Tree |
 |				#112 		|	  Path Sum							      |
 |               #121        |  Best Time To Buy And Sell Stocks           |
+|				#125		|	  Valid Palindrome						  |
 |               #141        |     Linked List Cycle                       |
 |               #146        |     LRU Cache 							  |
 |               #155        |     Min Stack 							  |
@@ -37,6 +38,7 @@
 |               #244        |     Shortest Word Distance II 			  |
 |               #245        |     Shortest Word Distance III 			  |
 |               #251        |     Flatten 2D vector 					  |
+|				#252		|	  Meeting Rooms							  |
 |               #256        |     paint House 							  |
 |				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
