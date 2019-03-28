@@ -43,7 +43,7 @@
  Time: o(n) cause we have to go through every element of the array
  space: 0(1) swaps happen in place and no otehr space was created
  
- Runtime: 88 ms, faster than 42.06% of Swift online submissions for Remove Duplicates from Sorted Array.
+ Runtime: 68 ms, faster than 99.85% of Swift online submissions for Remove Duplicates from Sorted Array.
  Memory Usage: 19.5 MB, less than 22.95% of Swift online submissions for Remove Duplicates from Sorted Array.
  */
 
@@ -64,3 +64,20 @@ class Solution {
         return slowRunner
     }
 }
+
+class Solution1 {
+    func removeDuplicates(_ nums: inout [Int]) -> Int {
+        guard nums.count>0 else {return 0}
+        
+        var slowRunner = 0
+        for fastRunner in 0..<nums.count {
+            if nums[fastRunner] > nums[slowRunner] {
+                slowRunner += 1
+                (nums[slowRunner],nums[fastRunner]) = (nums[fastRunner],nums[slowRunner])
+            }
+        }
+        return slowRunner
+    }
+}
+
+
