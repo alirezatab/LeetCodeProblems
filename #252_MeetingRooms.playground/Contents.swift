@@ -21,13 +21,13 @@ class Solution {
         /*
          first initail verbose way
          
-         var startArr = [Int]()
-         var endArr = [Int]()
+         var startArr = [Int]()                 // var startTimeArr = Array(repeating:0, count: intervals.count)
+         var endArr = [Int]()                   // var endTimeArr = Array(repeating:0, count: intervals.count)
          
-         for interval in intervals {
-         startArr.append(interval.start)
-         endArr.append(interval.end)
-         }
+         for interval in intervals {            // for i in 0..<intervals.count {
+            startArr.append(interval.start)         // startTimeArr[i] = intervals[i].start
+            endArr.append(interval.end)             // endTimeArr[i] = intervals[i].end
+         }                                      // }
          startArr.sort()
          endArr.sort()
          */
@@ -48,6 +48,35 @@ class Solution {
             j+=1
         }
         
+        return true
+    }
+}
+
+class Solution1 {
+    func canAttendMeetings(_ intervals: [Interval]) -> Bool {
+        guard intervals.count > 1 else {return true}
+        
+        //let startTimeArr = intervals.map{$0.start}.sorted()
+        //let endTimeArr = intervals.map{$0.end}.sorted()
+        
+        var startTimeArr = Array(repeating:0, count: intervals.count)
+        var endTimeArr = Array(repeating:0, count: intervals.count)
+        for i in 0..<intervals.count {
+            startTimeArr[i] = intervals[i].start
+            endTimeArr[i] = intervals[i].end
+        }
+        startTimeArr.sort()
+        endTimeArr.sort()
+        
+        var startIndex = 1
+        var endIndex = 0
+        
+        
+        while startIndex<startTimeArr.count && endIndex<endTimeArr.count {
+            if endTimeArr[endIndex]>startTimeArr[startIndex] {return false}
+            startIndex += 1
+            endIndex += 1
+        }
         return true
     }
 }
