@@ -39,6 +39,7 @@
 |               #245        |     Shortest Word Distance III 			  |
 |               #251        |     Flatten 2D vector 					  |
 |				#252		|	  Meeting Rooms							  |
+|				#253		|	  Meeting Rooms II						  |
 |               #256        |     paint House 							  |
 |				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
@@ -52,6 +53,7 @@
 |               #403        |     Frog Jump 							  |
 |               #412        |     Fizz Buzz 							  |
 |				#605		|	  Can Place Flowers						  |
+|				#680		|	  Valid Palindrome II 					  |
 |               #704        |     Binary Search 						  |
 |               #706        |     design HashMap 						  |
 |				#716		|	  Max Stack								  |
