@@ -21,21 +21,21 @@ class WordDistance {
     func shortest(_ word1: String, _ word2: String) -> Int {
         
         var shortestDist = Int.max
-        var w1Found = false
-        var w2Found = false
+//        var w1Found = false
+//        var w2Found = false
         var word1Ptr = -1
         var word2Ptr = -1
         
         for i in 0..<arr.count {
             if word1 == arr[i] {
                 word1Ptr = i
-                w1Found = true
+                //w1Found = true
             } else if word2 == arr[i] {
                 word2Ptr = i
-                w2Found = true
+                //w2Found = true
             }
             
-            if w1Found && w2Found {
+            if word1Ptr != -1 && word2Ptr != -1 { //w1Found && w2Found {
                 let distance = abs(word2Ptr-word1Ptr)
                 
                 if distance < shortestDist {
