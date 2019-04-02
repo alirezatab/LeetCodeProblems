@@ -19,6 +19,7 @@
 |               #53         |     Maximum Sub-Array    					  |
 |               #54         |     Spiral Matrix        					  |
 |               #67         |     Add Binary			   				  |
+|				#80			|  Remove Duplicates From Sorted Array II 	  |
 |               #101        |     Symmetric Tree       					  |
 |               #108        |  Convert Sorted Array To Binary Search Tree |
 |				#112 		|	  Path Sum							      |
