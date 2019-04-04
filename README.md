@@ -42,6 +42,7 @@
 |               #251        |     Flatten 2D vector 					  |
 |				#252		|	  Meeting Rooms							  |
 |				#253		|	  Meeting Rooms II						  |
+|				#254		|	  Factor Combinations					  |
 |               #256        |     paint House 							  |
 |				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
