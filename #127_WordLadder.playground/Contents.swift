@@ -161,3 +161,52 @@ class Solution1 {
         return true
     }
 }
+
+
+///////////////////////////////////////
+///////////// TRY 3 ///////////////////
+///////////////////////////////////////
+class Solution2 {
+    func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
+ 
+        let wordSet = Set(wordList)
+        guard wordSet.contains(endWord) else {return 0}
+
+        var wordGraph = [String: Set<String>]() // better than cause set look at is 0(1)
+        wordGraph[beginWord] = beginWord.neighborsIn(wordSet)
+        
+        
+        return 0
+    }
+}
+
+extension String {
+    // Return a Set of all possible neighbors
+    func neighborsIn(_ words: Set<String>) -> Set<String> {
+        var neighbors = Set<String>()
+        
+        let alphabetArray = [Character]("abcdefghijklmnopqrstuvwxyz")
+        for i in 0..<self.count {
+            var chars = [Character](self)
+            let temp = chars[i]
+            for j in 0..<alphabetArray.count {
+                // skip origin word
+                if temp == alphabetArray[j] {
+                    print("weird temp")
+                    continue
+                }
+                print("continue?")
+                chars[i] = alphabetArray[j]
+                let newWord = String(chars)
+                if words.contains(newWord) {
+                    neighbors.insert(newWord)
+                }
+            }
+        }
+        
+        return neighbors
+    }
+}
+
+let sol = Solution2()
+sol.ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"])
