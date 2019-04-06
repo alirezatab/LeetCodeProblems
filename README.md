@@ -30,6 +30,7 @@
 |               #155        |     Min Stack 							  |
 |				#156		|  	  Binary Tree Upside Down				  |
 |               #167        |     TwoSumII - Sorted Input Array 		  |
+|				#170		|	  TwoSumIII - Data Structure Design 	  |
 |               #200        |     Number Of Islands 					  |
 |               #202        |     Happy Number 							  |
 |               #205        |     Isomorphic Strings 					  |
