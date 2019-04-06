@@ -1,4 +1,7 @@
-
+/*
+ Runtime: 32 ms, faster than 100.00% of Swift online submissions for Paint House.
+ Memory Usage: 19.1 MB, less than 16.67% of Swift online submissions for Paint House.
+ */
 class Solution {
     func minCost(_ costs: [[Int]]) -> Int {
         guard costs.count > 0 else {return 0}
