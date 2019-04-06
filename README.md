@@ -25,6 +25,7 @@
 |				#112 		|	  Path Sum							      |
 |               #121        |  Best Time To Buy And Sell Stocks           |
 |				#125		|	  Valid Palindrome						  |
+|				#127		|	  Word Ladder							  |
 |               #141        |     Linked List Cycle                       |
 |               #146        |     LRU Cache 							  |
 |               #155        |     Min Stack 							  |
