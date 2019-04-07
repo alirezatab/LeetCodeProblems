@@ -1,60 +1,68 @@
-// works for most cases but not all
-// last failure was if t: is a duplicate string like "aba"
-//151 / 268 test cases passed.
-
-
-///////////////////////////////////////////////
-////////////////// TRY 1 //////////////////////
-///////////////////////////////////////////////
+/*
+ Time: o(N)
+ space: o(n)
+ */
 class Solution {
     func minWindow(_ s: String, _ t: String) -> String {
-        var shortest = [-1, s.count]
-        var allowedCharDic = [Character: Int]()
-        var missing = t.count
-        var prevDis = Int.max
+        guard s.count>=t.count else {return ""}
         
+        var dic = [Character:Int]()
         
+        for char in s {
+            dic[char] = 0
+        }
         for char in t {
-            allowedCharDic[char] = 0
+            if let val = dic[char] {
+                dic[char] = val+1
+            } else {
+                return ""
+            }
         }
         
-        var slow = 0
-        for fast in 0..<s.count {
-            let fastIndex = s.index(s.startIndex, offsetBy: fast)
-            let key = s[fastIndex]
-            
-            if let count = allowedCharDic[key] {
-                if count == 0 {
-                    missing -= 1
+        var start = 0, end = 0
+        var minStart = 0, minLength = Int.max
+        var numOfTargets = t.count
+        
+        while end < s.count {
+            print(end)
+            let endIndex = s.index(s.startIndex, offsetBy: end)
+            let endChar = s[endIndex]
+
+            if let curOcurrance = dic[endChar] {
+                if curOcurrance > 0 {
+                    numOfTargets -= 1
                 }
-                allowedCharDic[key] = count+1
+                dic[endChar] = curOcurrance-1
             }
-            while missing == 0 {
-                    
-                let localDistance = fast-slow
-                if localDistance < prevDis {
-                    shortest[0] = slow
-                    shortest[1] = fast
-                    prevDis = localDistance
+            print("here")
+
+            while numOfTargets == 0 {
+                if minLength > end-start+1 {
+                    minLength = end-start+1
+                    minStart = start
                 }
+                let startIndex = s.index(s.startIndex, offsetBy: start)
+                let startChar = s[startIndex]
                 
-                
-                let slowIndex = s.index(s.startIndex, offsetBy: slow)
-                let key = s[slowIndex]
-                
-                if let count = allowedCharDic[key] {
-                    if count == 1 {
-                        missing += 1
+                if let curOccurance = dic[startChar] {
+                    if curOccurance == 0 { // or >=
+                        numOfTargets += 1
                     }
-                    allowedCharDic[key] = count-1
+                    dic[startChar] = curOccurance+1
                 }
-                slow+=1
+                start+=1
             }
+            end += 1
         }
-        
-        let sIndex = s.index(s.startIndex, offsetBy: shortest[0])
-        let fIndex = s.index(s.startIndex, offsetBy: shortest[1])
-        let finalString = String(s[sIndex...fIndex])
-        return finalString
+        if minLength != Int.max {
+            let startWindowIndex = s.index(s.startIndex, offsetBy: minStart)
+            let endWindowIndex = s.index(s.startIndex, offsetBy: minStart+minLength)
+            return String(s[startWindowIndex..<endWindowIndex])
+        }
+        return ""
     }
 }
+
+let sol = Solution()
+sol.minWindow("babb", "baba")
+//sol2.minWindow("bbaa", "aba")
