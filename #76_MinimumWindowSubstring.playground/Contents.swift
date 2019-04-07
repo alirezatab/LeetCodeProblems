@@ -1,6 +1,11 @@
 // works for most cases but not all
 // last failure was if t: is a duplicate string like "aba"
+//151 / 268 test cases passed.
 
+
+///////////////////////////////////////////////
+////////////////// TRY 1 //////////////////////
+///////////////////////////////////////////////
 class Solution {
     func minWindow(_ s: String, _ t: String) -> String {
         var shortest = [-1, s.count]
