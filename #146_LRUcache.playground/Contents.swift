@@ -28,13 +28,11 @@ final class DoublyLinkedList {
             tail = node
             return node
         }
-
+        
         headNode.prev = node
         
         node.prev = nil
         node.next = headNode
-        
-        print("addToHead: \(tail)")
         
         return node
     }
@@ -53,27 +51,26 @@ final class DoublyLinkedList {
         
         if node === tail {
             tail = prevNode
-            print(tail)
-            print("move to head .. tail \(tail)")
-
+            tail?.prev = node
         }
+        
         self.head = node
     }
     
     func removeLast() -> Node? {
-        
-        //print("remvove last was called \(tail)")
         
         guard let tailNode = tail else {return nil}
         
         let prevNode = tailNode.prev
         prevNode?.next = nil
         tail = prevNode
+        
         if count == 1 {
             head = nil
         }
         
         count -= 1
+        
         return tailNode
     }
 }
@@ -93,6 +90,7 @@ class LRUCache {
         }
         
         list.moveToHead(node)
+        
         return node.value
     }
     
@@ -107,7 +105,6 @@ class LRUCache {
         
         if list.count > self.maxCapacity {
             let nodeRemoved = list.removeLast()
-            print(nodeRemoved?.key)
             if let key = nodeRemoved?.key {
                 dic[key] = nil
             }
