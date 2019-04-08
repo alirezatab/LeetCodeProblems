@@ -11,7 +11,8 @@ class Solution {
         
         func createFactors(_ c: [Int], _ start: Int,_ end: Int) {
             
-            let sqrtN = Int(ceil(sqrt(Double(end))))
+            // Int(ceil(sqrt(Double(end))))
+            let sqrtN = Int(sqrt(Double(end)))
             
             if start <= sqrtN {
                 for i in start...sqrtN {
