@@ -11,7 +11,39 @@ public class TreeNode {
         self.right = nil
     }
 }
+//////////////////////////////////////////
+//////////////// TRY 1 ///////////////////
+//////////////////////////////////////////
+/* iteretavelty
+ Time: o(N) - we visit all the nodes at least once
+ space: o(1)
+ */
+class Solution1 {
+    func upsideDownBinaryTree(_ root: TreeNode?) -> TreeNode? {
+        guard root != nil, root?.left != nil else {return root}
+        
+        var cur = root
+        var prev: TreeNode?
+        var next: TreeNode?
+        var right: TreeNode?
+        
+        while cur != nil {
+            next = cur?.left
+            cur?.left = right
+            
+            right = cur?.right
+            cur?.right = prev
+            
+            prev = cur
+            cur = next
+        }
+        return prev
+    }
+}
 
+//////////////////////////////////////////
+//////////////// TRY 2 ///////////////////
+//////////////////////////////////////////
 /*
         1
        / \
@@ -44,12 +76,11 @@ public class TreeNode {
  do this recrusively should have the tree reveresed
  */
 
-/*
+/* recrusiely
  Time: o(N) - we visit all the nodes at least once
  space: o(N) - cause of the recrusive call / stack being used
  */
-
-class Solution {
+class Solution2 {
     func upsideDownBinaryTree(_ root: TreeNode?) -> TreeNode? {
         guard root != nil, root?.left != nil else {return root}
         
