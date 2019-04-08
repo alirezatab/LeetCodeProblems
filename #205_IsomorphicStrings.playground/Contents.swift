@@ -34,12 +34,14 @@
  key, value = o,value not a, return false
  */
 
+//////////////////////////////////////////////////////////
+//////////////////////// TRY 1 ///////////////////////////
+//////////////////////////////////////////////////////////
 /*
  Runtime: 12096 ms, faster than 1.96% of Swift online submissions for Isomorphic Strings.
  Memory Usage: 19.6 MB, less than 100.00% of Swift online submissions for Isomorphic Strings.
  */
-
-class Solution {
+class Solution1 {
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
         var dicA = [Character:Character]()
         var dicB = [Character:Character]()
@@ -67,6 +69,46 @@ class Solution {
             }
             
         }
+        return true
+    }
+}
+
+
+//////////////////////////////////////////////////////////
+//////////////////////// TRY 2 ///////////////////////////
+//////////////////////////////////////////////////////////
+/*
+ Runtime: 24 ms, faster than 100.00% of Swift online submissions for Isomorphic Strings.
+ Memory Usage: 19.8 MB, less than 20.00% of Swift online submissions for Isomorphic Strings.
+ */
+class Solution2 {
+    func isIsomorphic(_ s: String, _ t: String) -> Bool {
+        guard s.count == t.count else {return false}
+        
+        var dic = [Character:Character]()
+        
+        let sArray = Array(s)
+        let tArray = Array(t)
+        
+        for i in 0..<s.count {
+            let sChar = sArray[i]
+            let tChar = tArray[i]
+            if let val = dic[sChar] {
+                if val == tChar {
+                    continue
+                } else {
+                    return false
+                }
+            } else {
+                if dic.values.contains(tChar) {
+                    return false
+                } else {
+                    dic[sChar] = tChar
+                }
+            }
+            
+        }
+        
         return true
     }
 }
