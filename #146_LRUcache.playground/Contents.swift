@@ -1,3 +1,8 @@
+/*
+ Runtime: 424 ms, faster than 77.52% of Swift online submissions for LRU Cache.
+ Memory Usage: 21.8 MB, less than 9.09% of Swift online submissions for LRU Cache.
+ */
+
 final class Node {
     var value: Int
     var key: Int
@@ -40,21 +45,20 @@ final class DoublyLinkedList {
     func moveToHead(_ node: Node?) {
         guard node !== head else {return}
         
-        let prevNode = node?.prev
-        let nextNode = node?.next
-        
-        prevNode?.next = nextNode
-        nextNode?.prev = prevNode
-        
-        node?.next = head
-        node?.prev = nil
-        
-        if node === tail {
-            tail = prevNode
-            tail?.prev = node
+        if head !== node {
+            if node === tail {
+                tail = node?.prev
+                tail?.next = nil
+            } else {
+                node?.prev?.next = node?.next
+                node?.next?.prev = node?.prev
+            }
+            
+            node?.prev = nil
+            node?.next = head
+            head?.prev = node
+            head = node
         }
-        
-        self.head = node
     }
     
     func removeLast() -> Node? {
