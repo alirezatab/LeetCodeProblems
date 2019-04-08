@@ -17,6 +17,9 @@ public class TreeNode {
 /* iteretavelty
  Time: o(N) - we visit all the nodes at least once
  space: o(1)
+ 
+ Runtime: 8 ms, faster than 100.00% of Swift online submissions for Binary Tree Upside Down.
+ Memory Usage: 19.2 MB, less than 50.00% of Swift online submissions for Binary Tree Upside Down.
  */
 class Solution1 {
     func upsideDownBinaryTree(_ root: TreeNode?) -> TreeNode? {
@@ -79,6 +82,9 @@ class Solution1 {
 /* recrusiely
  Time: o(N) - we visit all the nodes at least once
  space: o(N) - cause of the recrusive call / stack being used
+ 
+ Runtime: 8 ms, faster than 100.00% of Swift online submissions for Binary Tree Upside Down.
+ Memory Usage: 19 MB, less than 50.00% of Swift online submissions for Binary Tree Upside Down.
  */
 class Solution2 {
     func upsideDownBinaryTree(_ root: TreeNode?) -> TreeNode? {
