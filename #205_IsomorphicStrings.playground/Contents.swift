@@ -38,9 +38,14 @@
 //////////////////////// TRY 1 ///////////////////////////
 //////////////////////////////////////////////////////////
 /*
- Runtime: 12096 ms, faster than 1.96% of Swift online submissions for Isomorphic Strings.
- Memory Usage: 19.6 MB, less than 100.00% of Swift online submissions for Isomorphic Strings.
+ Runtime: 56 ms, faster than 34.29% of Swift online submissions for Isomorphic Strings.
+ Memory Usage: 19.9 MB, less than 20.00% of Swift online submissions for Isomorphic Strings.
+
+ Time: o(n) - n being the size of the string
+ Space: o(n+m) - one dicA && dicB
  */
+
+
 class Solution1 {
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
         var dicA = [Character:Character]()
@@ -80,6 +85,9 @@ class Solution1 {
 /*
  Runtime: 24 ms, faster than 100.00% of Swift online submissions for Isomorphic Strings.
  Memory Usage: 19.8 MB, less than 20.00% of Swift online submissions for Isomorphic Strings.
+ 
+ Time: o(n*m) - n being the size of the string - m is doing a look of dic values.
+ Space: o(n) - one dicA && dicB
  */
 class Solution2 {
     func isIsomorphic(_ s: String, _ t: String) -> Bool {
