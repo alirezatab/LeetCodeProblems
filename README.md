@@ -69,4 +69,5 @@
 |               #771        |     Jewels And Stones 					  |
 |               #832        |     Flipping An Image 					  |
 |               #905        |     Sort Array By Parity 					  |
+|				#973		|	  k Closest Points To Origin			  |
 |               #977        |     Squares Of Sorted Array 				  |
