@@ -54,6 +54,7 @@
 |               #329        |     Longest Increasing Path In Matrix 	  |
 |               #339        |     Nested List Weight Sum 				  |
 |               #344        |     Reverse String 						  |
+|				#359		| 	  Logger Rate Limiter					  |
 |				#364		|	  Nested List Weight SumII 				  |
 |				#366		|	  Find Leaves Of Binary Tree			  |
 |               #387        |     First Unique Character In String 		  |
@@ -71,3 +72,4 @@
 |               #905        |     Sort Array By Parity 					  |
 |				#973		|	  k Closest Points To Origin			  |
 |               #977        |     Squares Of Sorted Array 				  |
+|				#986		|	  Interval List Intersections			  |
