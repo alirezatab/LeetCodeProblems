@@ -54,6 +54,7 @@
 |               #329        |     Longest Increasing Path In Matrix 	  |
 |               #339        |     Nested List Weight Sum 				  |
 |               #344        |     Reverse String 						  |
+|				#346		|	  Moving Average From Data Stream		  |
 |				#359		| 	  Logger Rate Limiter					  |
 |				#364		|	  Nested List Weight SumII 				  |
 |				#366		|	  Find Leaves Of Binary Tree			  |
