@@ -40,13 +40,23 @@
  for loop through tickets and build the graph in the dictionary
  
  start from JFK and go till the end
+ use DFS/ Stack to go through values and remove the ones visited
+ append to dictionary
+ */
+
+/*
+ Runtime: 116 ms, faster than 82.89% of Swift online submissions for Reconstruct Itinerary.
+ Memory Usage: 21.6 MB, less than 8.89% of Swift online submissions for Reconstruct Itinerary.
+
+ Time: o(N)
+ Space: o(N) recrusive stack
  */
 
 class Solution {
+    var routeDic = [String:[String]]()
+    var route = [String]()
+    
     func findItinerary(_ tickets: [[String]]) -> [String] {
-        var routeDic = [String:[String]]()
-        var res = ["JFK"]
-        
         // build graph
         for ticket in tickets {
             if var val = routeDic[ticket[0]] {
@@ -57,29 +67,25 @@ class Solution {
             }
         }
         
-        print(routeDic)
-        
-        
-        
         for (key,values) in routeDic {
             let sortedVal = values.sorted()
             routeDic[key] = sortedVal
         }
         
-        print(routeDic)
+        visit("JFK")
         
-        // while !routeDic.isEmpty {
-        //     let key = res.last!
-        //     if var destenations = routeDic[key] {
-        //         res.append(destenations.removeFirst())
-        //         if destenations.isEmpty {
-        //             routeDic[key] = nil
-        //         } else {
-        //             routeDic[key] = destenations
-        //         }
-        //     }
-        // }
-        
-        return res
+        return route.reversed()
+    }
+    
+    func visit(_ airport: String) {
+        if routeDic[airport] != nil {
+            while routeDic[airport]!.count > 0 {
+                if let nextDestenation = routeDic[airport]!.first {
+                    routeDic[airport]!.removeFirst()
+                    visit(nextDestenation)
+                }
+            }
+        }
+        route.append(airport)
     }
 }
