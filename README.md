@@ -61,6 +61,7 @@
 |               #387        |     First Unique Character In String 		  |
 |               #403        |     Frog Jump 							  |
 |               #412        |     Fizz Buzz 							  |
+|				#427		|	  Construct Quad Tree					  |
 |				#605		|	  Can Place Flowers						  |
 |				#680		|	  Valid Palindrome II 					  |
 |               #704        |     Binary Search 						  |
