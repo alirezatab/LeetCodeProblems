@@ -63,6 +63,10 @@ create a helper function and start at 0,0 grid
 /*
 Runtime: 1 ms, faster than 99.95% of Java online submissions for Construct Quad Tree.
 Memory Usage: 39.6 MB, less than 98.55% of Java online submissions for Construct Quad Tree.
+
+Time: o(4^n)
+Space: o(N) --> stack ued for recrusive calls
+
 */
  */
 
