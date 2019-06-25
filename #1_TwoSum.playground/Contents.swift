@@ -27,6 +27,28 @@ class Solution {
         return []
     }
 }
+/*
+Runtime: 32 ms, faster than 96.79% of Swift online submissions for Two Sum.
+Memory Usage: 21.2 MB, less than 5.07% of Swift online submissions for Two Sum.
+ 
+ a but faster than abve solution cause enumerated is faster than normal for-loop in swift
+ 
+ Time: o(n)
+ Space: o(n)
+*/
+ 
+class Solution1 {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var dic = [Int:Int]()
+        for (index, value) in nums.enumerated() {
+            if let i = dic[value] {
+                return [i, index]
+            }
+            dic[target-value] = index
+        }
+        return []
+    }
+}
 
 /* Brute Force
 class Solution {
