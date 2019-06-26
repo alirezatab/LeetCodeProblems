@@ -3,8 +3,8 @@
  Memory Usage: 21.2 MB, less than 7.32% of Swift online submissions for Interval List Intersections.
  
  
- Time = o(n)
- Space = o(n)
+ Time = o(A+B)
+ Space = o(A+B)
  */
 class Solution {
     func intervalIntersection(_ A: [[Int]], _ B: [[Int]]) -> [[Int]] {
@@ -18,14 +18,12 @@ class Solution {
             
             if start<=end {
                 res.append([start,end])
-            } else if start==end {
-                res.append([start,end])
             }
             
-            if A[i][1]>B[j][1]{
-                j+=1
-            } else {
+            if A[i][1]<=B[j][1]{
                 i+=1
+            } else {
+                j+=1
             }
         }
         
