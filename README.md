@@ -15,6 +15,7 @@
 |               #24         |     Swap Nodes In Pairs	   				  |
 |               #26         |  Remove Duplicates From Sorted Array		  |
 |               #28         |     Implement strStr()   				  	  |
+|				#33 		|  	  Search In Rotated Sorted Array 		  |
 |               #35         |  Search Insert Position 					  |
 |               #53         |     Maximum Sub-Array    					  |
 |               #54         |     Spiral Matrix        					  |
@@ -52,6 +53,7 @@
 |               #311        |     Sparse Matrix Multiplication 			  |
 |               #322        |     Implement Queue Using Stack 			  |
 |               #329        |     Longest Increasing Path In Matrix 	  |
+|				#332		|	  Reconstruct Itinerary					  |
 |               #339        |     Nested List Weight Sum 				  |
 |               #344        |     Reverse String 						  |
 |				#346		|	  Moving Average From Data Stream		  |
