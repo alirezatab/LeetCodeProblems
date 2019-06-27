@@ -23,13 +23,39 @@ class Solution {
         }
         
         for i in 0..<K {
-            let closestPoint = distances[i].point
-            res.append(closestPoint)
+            res.append(distances[i].point)
         }
         return res
     }
     
     func calculateDistance(_ point: [Int]) -> Double {
         return sqrt(pow(Double(point[0]), 2) + pow(Double(point[1]), 2))
+    }
+}
+
+class Solution1 {
+    func kClosest(_ points: [[Int]], _ K: Int) -> [[Int]] {
+        var pts = points
+        pts.sort(by:sort)
+        
+        var res = [[Int]]()
+        for i in 0..<K {
+            res.append(pts[i])
+        }
+        return res
+    }
+    
+    func sort(_ o1: [Int], _ o2: [Int]) -> Bool{
+        
+        return (o1[0] * o1[0] + o1[1] * o1[1]) < (o2[0] * o2[0] + o2[1] * o2[1])
+    }
+}
+
+class Solution2 {
+    func kClosest(_ points: [[Int]], _ K: Int) -> [[Int]] {
+        let sortedPoints = points.sorted {
+            ($0[0] * $0[0] + $0[1] * $0[1]) < ($1[0] * $1[0] + $1[1] * $1[1])
+        }
+        return Array(sortedPoints.prefix(K))
     }
 }
