@@ -68,7 +68,6 @@ Time: o(4^n)
 Space: o(N) --> stack ued for recrusive calls
 
 */
- */
 
     class Solution {
         public Node construct(int[][] grid) {
@@ -94,6 +93,78 @@ Space: o(N) --> stack ued for recrusive calls
                     return new Node(true, false, topLeft, topRight, bottomLeft, bottomRight);
                 }
 
+            }
+        }
+    }
+}
+/*
+ same result as above.
+ difference is topLeft.val == topRight.val &&
+ topRight.val == bottomLeft.val &&
+ bottomLeft.val == bottomRight.val
+ 
+ vs.
+ 
+ topL.val == topR.val &&
+ bottomL.val == bottomR.val &&
+ topL.val == bottomL.val
+ 
+ as long as the three corners are all equal, we can even use
+ topR.val == bottomR.val instead of line 111
+ */
+
+/*
+ // Definition for a QuadTree node.
+ class Node {
+ public boolean val;
+ public boolean isLeaf;
+ public Node topLeft;
+ public Node topRight;
+ public Node bottomLeft;
+ public Node bottomRight;
+ 
+ public Node() {}
+ 
+ public Node(boolean _val,boolean _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {
+ val = _val;
+ isLeaf = _isLeaf;
+ topLeft = _topLeft;
+ topRight = _topRight;
+ bottomLeft = _bottomLeft;
+ bottomRight = _bottomRight;
+ }
+ };
+ */
+/*
+ mainGrid
+ (False, *.. true or false... true for now = *)
+ /     /       \       \
+ (  True,1/true) (False,*) (True, 1)  (True, 0/false)   if isLeaf is true, children are                  /   /   \   \                                  nil
+ (T,F)(T,F)(T,T)(T,T)
+ 
+ base case-- when length == 1
+ */
+
+class Solution1 {
+    public Node construct(int[][] grid) {
+        return helper(grid, 0, 0, grid.length);
+    }
+    
+    private Node helper(int[][] grid, int row, int col, int length) {
+        if (length == 1) {
+            return new Node(grid[row][col] == 1, true, null, null, null, null);
+        } else {
+            Node topL = helper(grid, row, col, length/2);
+            Node topR = helper(grid, row, col+length/2, length/2);
+            Node bottomL = helper(grid, row+length/2, col,length/2);
+            Node bottomR = helper(grid, row+length/2, col+length/2, length/2);
+            
+            if (topL.isLeaf && topR.isLeaf && bottomL.isLeaf && bottomR.isLeaf &&
+                topL.val == topR.val && bottomL.val == bottomR.val &&
+                topL.val == bottomL.val) {
+                return new Node(topL.val, true, null,null,null,null);
+            } else {
+                return new Node(true, false, topL, topR, bottomL, bottomR);
             }
         }
     }
