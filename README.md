@@ -70,8 +70,10 @@
 |               #706        |     design HashMap 						  |
 |				#716		|	  Max Stack								  |
 |               #724        |     Find Pivot Index 						  |
+|				#733		|	  Flood Fill							  |
 |               #760        |     Find Anagram Mappings 				  |
 |               #771        |     Jewels And Stones 					  |
+|				#819		|	  Most Common Word						  |
 |               #832        |     Flipping An Image 					  |
 |               #905        |     Sort Array By Parity 					  |
 |				#973		|	  k Closest Points To Origin			  |
