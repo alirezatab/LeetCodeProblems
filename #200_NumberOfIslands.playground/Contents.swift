@@ -2,6 +2,9 @@
 
 // DFS
 /*
+ Runtime: 180 ms, faster than 90.09% of Swift online submissions for Number of Islands.
+ Memory Usage: 21.4 MB, less than 6.33% of Swift online submissions for Number of Islands.
+ 
  Time complexity : O(M×N) where M is the number of rows and N is the number of columns.
  Space complexity : worst case O(M×N) in case that the grid map is filled with lands where DFS goes by M×N deep.
  */
