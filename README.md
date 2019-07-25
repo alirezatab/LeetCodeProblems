@@ -76,6 +76,8 @@
 |				#819		|	  Most Common Word						  |
 |               #832        |     Flipping An Image 					  |
 |               #905        |     Sort Array By Parity 					  |
+|				#937		|	  Reorder Log Files						  |
+|				#957		| 	  Prison Cells After N Days 			  |
 |				#973		|	  k Closest Points To Origin			  |
 |               #977        |     Squares Of Sorted Array 				  |
 |				#986		|	  Interval List Intersections			  |
