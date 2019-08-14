@@ -81,3 +81,5 @@
 |				#973		|	  k Closest Points To Origin			  |
 |               #977        |     Squares Of Sorted Array 				  |
 |				#986		|	  Interval List Intersections			  |
+|				#1108		|	  Defanging An IPaddress				  |
+|				#1119		|	  Remove Vowels From String 			  |
