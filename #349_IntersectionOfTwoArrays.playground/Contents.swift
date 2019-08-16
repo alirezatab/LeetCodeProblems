@@ -110,3 +110,35 @@ class Solution1 {
         return result
     }
 }
+
+
+// from result
+/*
+Runtime: 28 ms, faster than 56.54% of Swift online submissions for Intersection of Two Arrays.
+Memory Usage: 21 MB, less than 100.00% of Swift online submissions for Intersection of Two Arrays.
+
+Time: o(N+M) -- average case o(1)
+Space: o(M+N+R) like mentioend above
+*/
+class Solution {
+    func intersection(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+        var set1 = Set<Int>()
+        var set2 = Set<Int>()
+        var result = [Int]()
+        
+        for num in nums1 {
+            set1.insert(num)
+        }
+        
+        for num in nums2 {
+            set2.insert(num)
+        }
+        
+        for num in set1 {
+            if set2.contains(num) {
+                result.append(num)
+            }
+        }
+        return result
+    }
+}
