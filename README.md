@@ -22,6 +22,7 @@
 |               #67         |     Add Binary			   				  |
 |				#76 		|	  Minimum Window Substring 				  |
 |				#80			|  Remove Duplicates From Sorted Array II 	  |
+|				#88			|	  Merge	Sorted Array 					  |
 |               #101        |     Symmetric Tree       					  |
 |               #108        |  Convert Sorted Array To Binary Search Tree |
 |				#112 		|	  Path Sum							      |
