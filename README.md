@@ -32,6 +32,7 @@
 |               #146        |     LRU Cache 							  |
 |               #155        |     Min Stack 							  |
 |				#156		|  	  Binary Tree Upside Down				  |
+|				#160		|	  Intersection Of Two Linked Lists 		  |
 |               #167        |     TwoSumII - Sorted Input Array 		  |
 |				#170		|	  TwoSumIII - Data Structure Design 	  |
 |               #200        |     Number Of Islands 					  |
@@ -57,6 +58,7 @@
 |               #339        |     Nested List Weight Sum 				  |
 |               #344        |     Reverse String 						  |
 |				#346		|	  Moving Average From Data Stream		  |
+|				#349		|	  Intersection Of Two Arrays 			  |
 |				#359		| 	  Logger Rate Limiter					  |
 |				#364		|	  Nested List Weight SumII 				  |
 |				#366		|	  Find Leaves Of Binary Tree			  |
