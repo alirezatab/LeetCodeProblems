@@ -40,6 +40,7 @@
 |               #202        |     Happy Number 							  |
 |               #205        |     Isomorphic Strings 					  |
 |               #206        |     Reverse Linked List 				      |
+|               #232        |     Implement Queue Using Stack 			  |
 |               #237        |     Delete Node In Linked List 			  |
 |               #242        |     Valid Anagram 						  |
 |               #243        |     Shortest Word Distance  				  |
@@ -53,7 +54,7 @@
 |				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
 |               #311        |     Sparse Matrix Multiplication 			  |
-|               #322        |     Implement Queue Using Stack 			  |
+|				#322		|	  Coin Change							  |
 |               #329        |     Longest Increasing Path In Matrix 	  |
 |				#332		|	  Reconstruct Itinerary					  |
 |               #339        |     Nested List Weight Sum 				  |
