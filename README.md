@@ -40,10 +40,12 @@
 |				#170		|	  TwoSumIII - Data Structure Design 	  |
 |               #200        |     Number Of Islands 					  |
 |               #202        |     Happy Number 							  |
+|				#204		|	  Count Primes 							  |
 |               #205        |     Isomorphic Strings 					  |
 |               #206        |     Reverse Linked List 				      |
 |               #232        |     Implement Queue Using Stack 			  |
 |               #237        |     Delete Node In Linked List 			  |
+|			    #238 		|     Product of Array Except Self 			  |
 |               #242        |     Valid Anagram 						  |
 |               #243        |     Shortest Word Distance  				  |
 |               #244        |     Shortest Word Distance II 			  |
