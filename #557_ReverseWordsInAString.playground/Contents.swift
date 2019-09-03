@@ -1,20 +1,40 @@
 /*
- var spaceIndex
- var startOfWord
- var endOfWord
+ create two ptr start and end both init at index 0
+ spaceIndex init to 0
+ var swapped = false
+                                while loop end < str.count
+ "Let's take LeetCode contest"  --> loop through till if you get to space or at end of array,
+  s    |                                inc end
+       e                                swapped = false
+       |                            else
+      e|                                sI = end
+      sI                                dec end, cause end move to space
+                                        swapped = true
  
- "Let's take LeetCode contest" while space not found... set indexes + space Index
- ^   ^^
+                            for last item, cause end will go above str.count and break out of while loop, add a if stateent
+                            if end >= str.count
+                                spaceIndex = end
+                                dec end
+                                swapped = true
+                                    
+    need an inner while loop to start swapping characters
+ Let's
+ s   e              while swapped && start <= end {
+ set'L                  do a swap of str at start and str at end
+  s e                       inc start
+ s'teL                      dec end
+   s
+   e
  
- while start Index <= endIndex and endIndex is not at of bound of all string {
+ s'teL            // this point break out od swap and reconfigure ptrs
+  e s                   if start > end
+                            start = spaceIndex+1
+                            end = start
+                            swapped = false // to break out of loop
+    
+ 
  
  }
- 
- "set'L take LeetCode contest" swap, inc start, dec end
- ^ ^
- "set'L take LeetCode contest" swap, inc start, dec end
- ^
- ^
  */
 
 class Solution {
