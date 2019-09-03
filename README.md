@@ -3,31 +3,32 @@
 | 		Question Number  	|        Question Name   					  |	
 | ------------------------- | ------------------------------------------  |
 |              #-1          |     Merge Sort     					  	  |
-|               #0          |   selfMade_flattenArr    					  |
+|               #0          |     selfMade_flattenArr    				  |
 |               #1          |     Two Sum       					  	  |
 |               #2          |     Add Two Numbers      					  |
+|				#5 			|	  Longest Palindromic Substring 		  |
 |               #7          |     Reverse Integar      					  |
 |               #9          |     Palindrome Number    					  | 
 |               #13         |     Roman To Integar     					  |  
 |               #14         |     Longest Common Prefix					  |
 |               #20         |     Valid Parentheses    					  |
-|               #21         |  Merge Two Sorted Lists  					  |
+|               #21         |     Merge Two Sorted Lists  				  |
 |               #24         |     Swap Nodes In Pairs	   				  |
-|               #26         |  Remove Duplicates From Sorted Array		  |
+|               #26         |     Remove Duplicates From Sorted Array	  |
 |               #28         |     Implement strStr()   				  	  |
 |				#33 		|  	  Search In Rotated Sorted Array 		  |
-|               #35         |  Search Insert Position 					  |
+|               #35         |     Search Insert Position 				  |
 |				#49			|	  Group Anagrams						  |
 |               #53         |     Maximum Sub-Array    					  |
 |               #54         |     Spiral Matrix        					  |
 |               #67         |     Add Binary			   				  |
 |				#76 		|	  Minimum Window Substring 				  |
-|				#80			|  Remove Duplicates From Sorted Array II 	  |
+|				#80			|     Remove Duplicates From Sorted Array II  |
 |				#88			|	  Merge	Sorted Array 					  |
 |               #101        |     Symmetric Tree       					  |
 |               #108        |  Convert Sorted Array To Binary Search Tree |
 |				#112 		|	  Path Sum							      |
-|               #121        |  Best Time To Buy And Sell Stocks           |
+|               #121        |     Best Time To Buy And Sell Stocks        |
 |				#125		|	  Valid Palindrome						  |
 |				#127		|	  Word Ladder							  |
 |               #141        |     Linked List Cycle                       |
@@ -69,6 +70,7 @@
 |               #403        |     Frog Jump 							  |
 |               #412        |     Fizz Buzz 							  |
 |				#427		|	  Construct Quad Tree					  |
+|				#557		|	  Reverse Words in a String 			  |
 |				#605		|	  Can Place Flowers						  |
 |				#680		|	  Valid Palindrome II 					  |
 |               #704        |     Binary Search 						  |
