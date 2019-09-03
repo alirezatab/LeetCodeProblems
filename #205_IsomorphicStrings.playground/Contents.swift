@@ -3,33 +3,33 @@
  go through the array
  
  s = "egg"
- *
+      *
  t = "add"
- --------------> if dic[e] is nil,
- -------------->     then create dic[e] = i
+ --------------> if dic["e"] is nil,
+ -------------->     then create dic["e"] = "a"
  s = "egg"
- *
+       *
  t = "add"
- --------------> if dic[e] is nil,
- -------------->     then create dic[e] = i
+ --------------> if dic["g"] is nil,
+ -------------->     then create dic["g"] = "d"
  s = "egg"
- *
+        *
  t = "add"
- --------------> if dic[e] is not nil,
+ --------------> if dic["g"] is not nil,
  -------------->     then value of that dic.key should euqal to the character of other one, otherwise return false
  
  s = "foo",
- *
+      *
  t = "bar"
  key, value = f,b
  
  s = "foo",
- *
+       *
  t = "bar"
  key, value = o,a
  
  s = "foo",
- *
+        *
  t = "bar"
  key, value = o,value not a, return false
  */
@@ -120,3 +120,10 @@ class Solution2 {
         return true
     }
 }
+
+// egg s=e
+// *
+// add t=a
+
+// e   a
+// g   d
