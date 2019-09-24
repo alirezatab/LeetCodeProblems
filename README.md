@@ -36,6 +36,7 @@
 |               #155        |     Min Stack 							  |
 |				#156		|  	  Binary Tree Upside Down				  |
 |				#160		|	  Intersection Of Two Linked Lists 		  |
+|				#162		|	  Find Peak Element						  |
 |               #167        |     TwoSumII - Sorted Input Array 		  |
 |				#170		|	  TwoSumIII - Data Structure Design 	  |
 |               #200        |     Number Of Islands 					  |
@@ -57,6 +58,7 @@
 |               #256        |     paint House 							  |
 |				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
+|				#295		|	  Find Median From Data Stream 			  |
 |               #311        |     Sparse Matrix Multiplication 			  |
 |				#322		|	  Coin Change							  |
 |               #329        |     Longest Increasing Path In Matrix 	  |
