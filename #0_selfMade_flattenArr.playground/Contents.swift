@@ -50,3 +50,6 @@ func flattenArray1(nestedArr: [Any]) -> [Int] {
 
 print(flattenArray1(nestedArr: [1,[2,[[3,4]]]]))
 
+
+
+
