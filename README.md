@@ -66,6 +66,7 @@
 |               #339        |     Nested List Weight Sum 				  |
 |               #344        |     Reverse String 						  |
 |				#346		|	  Moving Average From Data Stream		  |
+|				#347		|	  Top K Frequent Elements 				  |
 |				#349		|	  Intersection Of Two Arrays 			  |
 |				#359		| 	  Logger Rate Limiter					  |
 |				#364		|	  Nested List Weight SumII 				  |
@@ -74,6 +75,7 @@
 |               #403        |     Frog Jump 							  |
 |               #412        |     Fizz Buzz 							  |
 |				#427		|	  Construct Quad Tree					  |
+|				#503		|	  Next Greater Element II 				  |
 |				#557		|	  Reverse Words in a String 			  |
 |				#605		|	  Can Place Flowers						  |
 |				#680		|	  Valid Palindrome II 					  |
