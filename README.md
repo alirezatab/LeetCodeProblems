@@ -57,6 +57,7 @@
 |				#253		|	  Meeting Rooms II						  |
 |				#254		|	  Factor Combinations					  |
 |               #256        |     paint House 							  |
+|				#277		|	  Find the Celebrity					  |
 |				#278		|	  First Bad Version						  |
 |               #283        |     Moves Zeros 							  |
 |				#295		|	  Find Median From Data Stream 			  |
