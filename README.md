@@ -77,6 +77,7 @@
 |               #403        |     Frog Jump 							  |
 |               #412        |     Fizz Buzz 							  |
 |				#427		|	  Construct Quad Tree					  |
+|				#479		|	  Largest Palindrome Product			  |
 |				#503		|	  Next Greater Element II 				  |
 |				#557		|	  Reverse Words in a String 			  |
 |				#605		|	  Can Place Flowers						  |
