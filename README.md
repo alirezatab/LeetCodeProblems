@@ -18,6 +18,7 @@
 |               #28         |     Implement strStr()   				  	  |
 |				#33 		|  	  Search In Rotated Sorted Array 		  |
 |               #35         |     Search Insert Position 				  |
+|				#46			|	  Permutations 							  |
 |				#49			|	  Group Anagrams						  |
 |               #53         |     Maximum Sub-Array    					  |
 |               #54         |     Spiral Matrix        					  |
