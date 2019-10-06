@@ -25,6 +25,7 @@
 |               #54         |     Spiral Matrix        					  |
 |               #67         |     Add Binary			   				  |
 |				#76 		|	  Minimum Window Substring 				  |
+|				#79 		|	  Word Search							  |
 |				#80			|     Remove Duplicates From Sorted Array II  |
 |				#88			|	  Merge	Sorted Array 					  |
 |               #101        |     Symmetric Tree       					  |
