@@ -11,6 +11,7 @@
 |               #9          |     Palindrome Number    					  | 
 |               #13         |     Roman To Integar     					  |  
 |               #14         |     Longest Common Prefix					  |
+|				#12 		|	  3 Sum 								  |
 |               #20         |     Valid Parentheses    					  |
 |               #21         |     Merge Two Sorted Lists  				  |
 |               #24         |     Swap Nodes In Pairs	   				  |
