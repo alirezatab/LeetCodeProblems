@@ -85,3 +85,43 @@ class Solution {
         
     }
 }
+
+
+/*
+ Runtime: 140 ms, faster than 100.00% of Swift online submissions for Reverse Words in a String III.
+ Memory Usage: 21.6 MB, less than 100.00% of Swift online submissions for Reverse Words in a String III.
+ 
+ less verbose, faster cause of less constant values and the inner while loop cuases faster iterations
+ */
+class Solution1 {
+    func reverseWords(_ s: String) -> String {
+        var start = 0
+        var end = 0
+        var nextStart = 0
+        
+        var arr = Array(s)
+        
+        while end<arr.count {
+            
+            while arr[end] != " " {
+                end += 1
+                if end == arr.count {break}
+            }
+        
+            nextStart = end+1
+            end -= 1
+            
+            while start<=end {
+                (arr[start], arr[end]) = (arr[end], arr[start])
+                start+=1
+                end-=1
+            }
+                        
+            start = nextStart
+            end = start
+        }
+            
+        let finalStr = String(arr)
+        return finalStr
+    }
+}
