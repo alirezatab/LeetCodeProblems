@@ -123,3 +123,39 @@ class Solution1 {
         return resultArray[amount] == amount+1 ? -1 : resultArray[amount]
     }
 }
+
+// Dynamic programming with memoization (Top-down)
+// another way to do it
+class Solution3 {
+    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
+        guard coins.count > 0 else { return 0 }
+        guard amount > 0 else { return amount }
+        
+        var total = amount
+        var dic = [Int: Int]()
+        
+        func figureOutMinCoin(_ total: Int) -> Int {
+            if total == 0 { return 0 }
+            if let minCoinReq = dic[total] {
+                return minCoinReq
+            }
+            
+            var minVal = Int.max
+
+            for coin in coins {
+                if coin <= total {
+                    let possibleMinVal = figureOutMinCoin(total-coin)
+                    if possibleMinVal < minVal {
+                        minVal = possibleMinVal + 1
+                    }
+                }
+            }
+            
+            dic[total] = minVal
+            return minVal
+        }
+
+        let minCoin = figureOutMinCoin(total)
+        return minCoin == Int.max ? -1 : minCoin
+    }
+}
